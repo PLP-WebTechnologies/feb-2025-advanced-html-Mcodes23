@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Elements Implementation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #333;
+        color: white;
+      }
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin-top: 20px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ordered List -->
+    <h1>Hey welcome to Jenna's website</h1>
+    <p>This is Jenna and she is happy to meet you all</p>
+    <img src="./images/dog.jpg" alt="Brown dog from pexels.com" width="600" />
+    <h1>What Jenna loves</h1>
+    <ol type="I">
+      <li>Sleeping</li>
+      <li>Playing</li>
+      <li>Eating</li>
+      <li>Belly rubs</li>
+      <li>Visiting the park</li>
+    </ol>
+
+    <!-- Contact Table -->
+    <h2>People contacting Jenna</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>New York, USA</td>
+        <td>+1 234 567 890</td>
+        <td>johndoe@example.com</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>London, UK</td>
+        <td>+44 789 123 456</td>
+        <td>janesmith@example.com</td>
+      </tr>
+      <tr>
+        <td>Ali Khan</td>
+        <td>Dubai, UAE</td>
+        <td>+971 55 667 8901</td>
+        <td>alikhan@example.com</td>
+      </tr>
+      <tr>
+        <td>Maria Garcia</td>
+        <td>Madrid, Spain</td>
+        <td>+34 612 345 678</td>
+        <td>maria@example.com</td>
+      </tr>
+      <tr>
+        <td>David Kim</td>
+        <td>Seoul, South Korea</td>
+        <td>+82 10 9876 5432</td>
+        <td>davidkim@example.com</td>
+      </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Full Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter a strong password"
+        required
+        minlength="6"
+      />
+
+      <!-- Date Field -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <!-- Dropdown -->
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Choose your country</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="india">India</option>
+        <option value="kenya">Kenya</option>
+      </select>
+
+      <!-- Radio Buttons (Gender) -->
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" required /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <input type="radio" name="gender" value="other" /> Other
+
+      <!-- Checkboxes -->
+      <label>Interests:</label>
+      <input type="checkbox" name="interest" value="coding" /> Coding
+      <input type="checkbox" name="interest" value="gaming" /> Gaming
+      <input type="checkbox" name="interest" value="reading" /> Reading
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia Elements -->
+    <h2>Jenna's favourite music</h2>
+    <audio controls>
+      <source
+        src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <h3>Jenna's best video</h3>
+    <video width="600" controls>
+      <source
+        src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
